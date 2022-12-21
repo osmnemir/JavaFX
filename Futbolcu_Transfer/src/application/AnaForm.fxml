@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderpane" prefHeight="600.0" prefWidth="1000.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AnaFormController">
+   <left>
+      <VBox prefHeight="600.0" prefWidth="211.0" style="-fx-background-color: #303030;" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onMouseClicked="#anasayfa" prefHeight="60.0" prefWidth="211.0" style="-fx-background-color: #404040; -fx-text-fill: #f0f0f0;" text="ANA SAYFA">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/icons8_homebrew_32.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" onMouseClicked="#futbolcular" prefHeight="60.0" prefWidth="400.0" style="-fx-background-color: transparent; -fx-text-fill: #f0f0f0;" text="FUTBOLCULAR">
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/icons8_soccer_player_32.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" onMouseClicked="#futbolcual" prefHeight="60.0" prefWidth="400.0" style="-fx-background-color: transparent; -fx-text-fill: #f0f0f0;" text=" TRANSFER ET">
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/icons8_data_transfer_32.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" onMouseClicked="#futbolcuekle" prefHeight="60.0" prefWidth="400.0" style="-fx-background-color: transparent; -fx-text-fill: #f0f0f0;" text="FUTBOLCU EKLE">
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/icons8_duplicate_32.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" onMouseClicked="#takımgirisbilgileri" prefHeight="60.0" prefWidth="400.0" style="-fx-background-color: transparent; -fx-text-fill: #f0f0f0;" text="GİRİŞ BİLGİLERİ">
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/icons8_cloud_file_32.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <top>
+      <HBox alignment="CENTER_RIGHT" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="10.0" top="5.0" />
+         </padding>
+         <children>
+            <ImageView fitWidth="24.0" onMouseClicked="#close" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons8_shutdown_32.png" />
+               </image>
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="174.0" fitWidth="180.0" layoutX="308.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/images.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="315.0" layoutY="14.0" style="-fx-text-fill: white; -fx-background-color: #56ffff;" text="YAPIMCI" textAlignment="CENTER">
+               <font>
+                  <Font name="Courier New" size="38.0" />
+               </font>
+            </Label>
+            <Label layoutX="280.0" layoutY="318.0" style="-fx-text-fill: white; -fx-background-color: #56ffff;" text="OSMAN EMER" textAlignment="CENTER">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

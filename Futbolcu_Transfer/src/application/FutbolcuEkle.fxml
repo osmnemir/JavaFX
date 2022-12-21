@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #2C3E50;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FutbolcuEkleController">
+   <children>
+      <AnchorPane prefHeight="550.0" prefWidth="800.0">
+         <children>
+            <Button fx:id="btn_ekle" layoutX="450.0" layoutY="85.0" mnemonicParsing="false" onAction="#btn_ekle_click" prefHeight="35.0" prefWidth="160.0" style="-fx-background-color: #2f2f2f9a; -fx-background-radius: 100; -fx-text-fill: white;" text="EKLE">
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/icons8_add_32.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="btn_sil" layoutX="450.0" layoutY="145.0" mnemonicParsing="false" onAction="#btn_sil_click" prefHeight="35.0" prefWidth="160.0" style="-fx-background-color: #2f2f2f9a; -fx-background-radius: 100; -fx-text-fill: white;" text="  SİL">
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/icons8_delete_database_32.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Label fx:id="lbl_sonuc" layoutX="463.0" layoutY="289.0" />
+            <VBox layoutX="102.0" layoutY="3.0" prefHeight="491.0" prefWidth="228.0">
+               <children>
+                  <TextField fx:id="ekle_id" prefHeight="35.0" promptText="İD GİRİNİZ">
+                     <VBox.margin>
+                        <Insets top="40.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="ekle_adı" prefHeight="35.0" promptText="FUTBOLCU ADI">
+                     <VBox.margin>
+                        <Insets top="40.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="ekle_takımı" prefHeight="35.0" promptText="TAKIMI">
+                     <VBox.margin>
+                        <Insets top="40.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <ComboBox fx:id="cmb_mvki" prefHeight="35.0" prefWidth="232.0" promptText="MEVKİ">
+                     <VBox.margin>
+                        <Insets top="40.0" />
+                     </VBox.margin>
+                  </ComboBox>
+                  <ComboBox fx:id="cmb_yası" prefHeight="35.0" prefWidth="234.0" promptText="YAŞI">
+                     <VBox.margin>
+                        <Insets top="40.0" />
+                     </VBox.margin>
+                  </ComboBox>
+                  <TextField fx:id="ekle_fiyat" prefHeight="35.0" promptText="FİYATI">
+                     <VBox.margin>
+                        <Insets top="40.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>

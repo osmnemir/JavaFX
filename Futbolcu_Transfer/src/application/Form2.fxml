@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="337.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Form2Controller">
+   <children>
+      <ImageView fitHeight="337.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/oe.jpg" />
+         </image>
+      </ImageView>
+      <HBox layoutX="106.0" layoutY="46.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <children>
+            <Text fill="#d0d0d0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Quicksand; -fx-font-weight: bolder; -fx-font-size: 2.4em;" text="Futbolcu Transfer" wrappingWidth="535.98046875">
+               <effect>
+                  <DropShadow height="240.83" radius="97.2" width="149.97" />
+               </effect>
+            </Text>
+         </children>
+      </HBox>
+      <VBox layoutX="250.0" layoutY="82.0" prefHeight="200.0" prefWidth="250.0">
+         <children>
+            <HBox style="-fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;">
+               <children>
+                  <ImageView>
+                     <image>
+                        <Image url="@../img/icons8_anchor_32.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="kul_ad" prefHeight="40.0" promptText="username" style="-fx-background-color: transparent; -fx-prompt-text-fill: white;" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox style="-fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;">
+               <children>
+                  <ImageView>
+                     <image>
+                        <Image url="@../img/icons8_key_32.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="sifre" prefHeight="40.0" promptText="password" style="-fx-background-color: transparent; -fx-prompt-text-fill: white;" HBox.hgrow="ALWAYS" />
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <Label fx:id="lbl_sonuc" />
+            <Button fx:id="grs_ekle" mnemonicParsing="false" onAction="#grs_ekle_click" prefHeight="42.0" prefWidth="250.0" style="-fx-background-color: #2f2f2f9a; -fx-background-radius: 100; -fx-text-fill: white;" text="Kullanıcı Ekle">
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/icons8_add_32.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btn_login" mnemonicParsing="false" onAction="#login_click" prefHeight="30.0" prefWidth="250.0" style="-fx-background-color: #2f2f2f9a; -fx-background-radius: 100; -fx-text-fill: white;" text="     Login">
+               <graphic>
+                  <ImageView>
+                     <image>
+                        <Image url="@../img/icons8_login_32.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <HBox layoutX="200.0" layoutY="237.0" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #2f2f2f9a;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Futbolcu Transfer Otomasyonu" textAlignment="CENTER" wrappingWidth="600.365234375">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+            </Text>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

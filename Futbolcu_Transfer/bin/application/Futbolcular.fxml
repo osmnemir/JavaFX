@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="800.0" style="-fx-background-color: #2C3539;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.futbolcuaraController">
+   <children>
+      <SplitPane dividerPositions="0.36678832116788324" orientation="VERTICAL" prefHeight="550.0" prefWidth="809.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="204.0" prefWidth="798.0">
+               <children>
+                  <TextField fx:id="txt_arama" alignment="CENTER" layoutX="81.0" layoutY="44.0" onAction="#txt_arama_action" onKeyPressed="#txt_arama_Keypresed" prefHeight="37.0" prefWidth="218.0" promptText="Futbolcu Ara" style="-fx-background-color: #2f2f2f3a; -fx-background-radius: 100; -fx-prompt-text-fill: black;" />
+                  <Button fx:id="btn_ara" layoutX="282.0" layoutY="136.0" mnemonicParsing="false" onAction="#btn_ara_click" prefHeight="45.0" prefWidth="186.0" style="-fx-background-color: #2f2f2f3a; -fx-background-radius: 100;" text="Futbolcu Ara">
+                     <graphic>
+                        <ImageView fitHeight="29.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/icons8_search_32.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="14.0" />
+                     </font></Button>
+                  <TextField fx:id="txt_baş" layoutX="571.0" layoutY="32.0" promptText="Başlangıç Fiyat" style="-fx-background-radius: 100;" />
+                  <TextField fx:id="txt_son" layoutX="571.0" layoutY="69.0" promptText="Son Fiyat" style="-fx-background-radius: 100;" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="328.0" prefWidth="798.0">
+               <children>
+                  <TableView fx:id="tableView_Aramalar" layoutX="299.0" layoutY="51.0" prefHeight="344.0" prefWidth="798.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn fx:id="column_id" prefWidth="75.0" text="aİD" />
+                      <TableColumn fx:id="column_takım" prefWidth="75.0" text="takım" />
+                        <TableColumn fx:id="column_futbolcuadı" prefWidth="177.0" text="futbolcu adı" />
+                        <TableColumn fx:id="column_takımı" prefWidth="120.0" text="takımı" />
+                        <TableColumn fx:id="column_mevki" prefWidth="132.0" text="mevki" />
+                        <TableColumn fx:id="column_yaşı" prefWidth="82.0" text="yaşı" />
+                        <TableColumn fx:id="column_fiyat" minWidth="0.0" prefWidth="136.0" text="fiyat" />
+                    </columns>
+                  </TableView>
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</HBox>
